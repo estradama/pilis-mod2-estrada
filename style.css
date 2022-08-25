@@ -9,7 +9,7 @@ header {
 }
 div{
 
-  display:flex;
+  /* display:flex; */
   flex-direction:inherit;
   
 }
@@ -22,12 +22,14 @@ div{
 body {
   display: block;
 }
+
 html,
 body {
   font-family: "Poppins", sans-serif;
   background: #5F7464;
   color: black; 
-  text-align: center;   
+  text-align: center; 
+  box-sizing: border-box;  
 }
 
 /* Navar */
@@ -49,9 +51,9 @@ body {
     padding-top: 5px;
     width: 50%;
   }
-#navbar #image {
+/* #navbar #image {
 
-  }
+  } */
 
 #navbar ul {
   list-style: none;
@@ -124,7 +126,16 @@ body {
     display: block;
     width: 50%; 
 }
-.form-group{
+
+.imm{
+  float: right;
+}
+
+#image{
+  float: right;
+  padding-right: 7%; 
+}
+/* .form-group{
 
 }
 .form-control{
@@ -132,4 +143,6 @@ body {
 }
 .btn{
 
-}
+} */
+
+
