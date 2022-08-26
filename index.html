@@ -5,6 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./clima/style.css">
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<title>Feria de las Plantas</title>
 	</head>
 	<body>
@@ -121,7 +123,7 @@
 							</div>
 							<div class="form-group">
 								<label for="name">Celular</label>
-								<input type="number" class="form-control" />
+								<input id="celular" type="number" class="form-control" />
 							</div>
 							<!-- CONTROLAR -->
 							<button id="enviar" class="btn">Enviar</button>
@@ -129,12 +131,39 @@
 					</div>
 				</div>
 			</section>
+
+			<section>
+
+				<div id="containerClima">
+					<div id="tituloPrincipal">
+						<h1 id="titulo">Clima en ciudad cultural</h1>
+					</div>
+					<div id="containersubtitulo">
+						<h2 id="city"></h2>
+						<h4 id="country"></h4>
+					</div>
+				<div >
+					<div id="containerTemp">
+						<h2 id="temp"></h2>
+						<img id="icon" src="" alt="">
+						
+					</div>
+					<div id="containerDesc">
+						<h3 id="description"></h3>
+						
+					</div>
+				</div>
+			</div>
+
+
+			</section>
 		</main>
 
 		<footer>
-			<section id="clima">
-				<h1>aqui va el clima</h1>
-			</section>
+			
 		</footer>
+
+		<script src="./contacto/contacto.js"></script>
+		<script src="./clima/clima.js"></script>
 	</body>
 </html>

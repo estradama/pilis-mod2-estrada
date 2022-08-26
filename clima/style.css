@@ -1,0 +1,67 @@
+#containerClima {
+    background-color: antiquewhite;
+    border-radius: 10%;
+    width: 30%;
+    padding-top: 8px;
+    font-family: fantasy;
+    box-sizing: border-box;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#tituloPrincipal h1{
+    margin: 1%;
+}
+
+#titulo{
+color: black;
+text-decoration: underline;
+}
+
+#containersubtitulo{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#city{
+    text-align: center;
+    font-weight: 100px;
+    color: cadetblue;
+    font-weight: 100;
+    font-family:monospace ;
+    font-size: 25px;
+}
+
+#country{
+    font-family:'Courier New', Courier, monospace ;
+    padding: 0.2em 0.6em;
+    border-radius: 30px;
+    background-color: orange;
+    color: #fff;   
+    margin: auto;
+}
+
+#temp{
+    font-size: 30px;
+    margin: 1%;
+}
+
+#icon{
+    width: 40%;
+    height: 40%;
+    padding-left: 30%;
+}
+
+#description{
+    color: cadetblue;
+    padding-bottom: 5%;
+}
+
+
+
+
+
