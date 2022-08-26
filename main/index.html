@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../clima/style.css">
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<title>Feria de las Plantas</title>
+	</head>
+	<body>
+		<header>
+			<nav id="navbar">
+				<div class="lista">
+					<ul class="menu">
+						<li class="menu-item">
+							<a href="#nosotros">nosotros</a>
+						</li>
+						<li class="menu-item">
+							<a href="#evento">evento</a>
+						</li>
+						<li class="menu-item">
+							<a href="#registro">registrarse</a>
+						</li>
+					</ul>
+				</div>
+				<div class="imm">
+					<a href="#home">
+					<img
+						id="image"
+						src="data:image/png;base64,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"
+						alt="logo"
+						height="140px"
+					/>
+				</a>
+					<button id="logout" class="bt">Cerrar Sesion</button>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home">
+				<div class="container">
+					<div class="showcase-text">
+						<h1>
+							<span class="title-one">Feria de Plantas</span><br />
+							<span class="title-two">Las Plantas son vida, sembrar es un habito del pasado pero es necesario q se convierta en nuestro futuro</span>
+						</h1>
+					</div>
+
+					<div class="showcase-img">
+						<img
+							class="immg"
+							src="https://st2.depositphotos.com/6572538/10193/v/950/depositphotos_101937050-stock-illustration-tobacco-tree-plants-and-flowers.jpg"
+							alt=""
+							width="100%"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<section id="evento">
+				<div class="container">
+					<div class="about-video">
+						<iframe
+							class="a-video"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/25o_VimCvfM"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+					<div class="about-title">
+						<h2>Un Encuentro con lo verde</h2>
+						<br />
+						<p class="large">
+							La plantas nos proporcionan alimentos, medicinas, madera, combustible y fibras. Además, brindan cobijo a multitud de otros seres vivos, producen el oxígeno que respiramos, mantienen el suelo, regulan la humedad y contribuyen a la estabilidad del clima.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="nosotros">
+				<div class="container">
+					<div class="about-title1">
+						<h2>Ministerio de produccion</h2>
+						<p>
+							Fringilla aliquet habitasse felis, in facilisis donec ut scelerisque. Sit ultrices nunc, eu cursus id est
+							pellentesque. Nunc pellentesque ultricies ante pharetra magna quis massa turpis. Egestas ullamcorper quam
+							amet vulputate eget platea. Nisi pretium tellus consectetur faucibus aenean imperdiet amet adipiscing in.
+							Vestibulum pretium, suspendisse feugiat in ultricies gravida pharetra aliquet. Proin commodo et et
+							adipiscing viverra ultrices pretium in.
+						</p>
+					</div>
+					<div class="about-description">
+						<img
+							src="data:image/jpeg;base64,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"
+							alt=""
+						/>
+					</div>
+				</div>
+			</section>
+
+			<section id="registro">
+				<div class="container">
+					<div class="about-title">
+						<h2>sumate al evento para potenciar el comercio local, luego te contactaremos</h2>
+					</div>
+					<div class="contact-form">
+						<h2>Contacto</h2>
+						<form id="formulario">
+							<div class="form-group">
+								<label for="comercio">Comercio</label>
+								<input id="comercio" class="form-control" type="text" />
+							</div>
+							<div class="form-group">
+								<label for="titular">Titular</label>
+								<input id="titular" class="form-control" type="text" />
+							</div>
+							<div class="form-group">
+								<label for="name">Celular</label>
+								<input id="celular" type="number" class="form-control" />
+							</div>
+							<!-- CONTROLAR -->
+							<button id="enviar" class="btn">Enviar</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section>
+
+				<div id="containerClima">
+					<div id="tituloPrincipal">
+						<h1 id="titulo">Clima en ciudad cultural</h1>
+					</div>
+					<div id="containersubtitulo">
+						<h2 id="city"></h2>
+						<h4 id="country"></h4>
+					</div>
+				<div >
+					<div id="containerTemp">
+						<h2 id="temp"></h2>
+						<img id="icon" src="" alt="">
+						
+					</div>
+					<div id="containerDesc">
+						<h3 id="description"></h3>
+						
+					</div>
+				</div>
+			</div>
+
+
+			</section>
+		</main>
+
+		<footer>
+			
+		</footer>
+
+		<script src="../contacto/contacto.js"></script>
+		<script src="../clima/clima.js"></script>
+		<script src="../login/logout.js"></script>
+	</body>
+</html>
