@@ -58,6 +58,10 @@ body {
     padding-top: 5px;
     width: 50%;
   }
+  li:hover {
+    background-color: black;
+    color: white;
+  }
 
 
 #navbar ul {
@@ -153,5 +157,17 @@ body {
 label{
   display: inline-block;
   width: 100px;
+}
+
+.bt{
+
+  background: transparent;
+  height: 50%;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+.bt:hover {
+  background-color: black;
+  color: white;
 }
 
